@@ -1,8 +1,8 @@
 function means() {
-	var divisors = new Array(); //获取除数
+	var divisors = new Array();
 	divisors = document.getElementsByClassName('divisor');
 
-	var dividends = new Array(); //获取被除数
+	var dividends = new Array(); 
 	dividends = document.getElementsByClassName('dividend');
 
 	var sum = 0;
@@ -12,9 +12,9 @@ function means() {
 		sum = sum + divisors[i].value / dividends[i].value;
 		len++;
 	}
-	
-	var eq = sum/len *100; 
-	
+
+	var eq = sum/len *100;
+
 	if(eq>=92){
 		document.getElementById("p_4_Grade").innerHTML = "A+";
 	}else if(eq>=87){
@@ -38,7 +38,7 @@ function means() {
 	}else{
 		document.getElementById("p_4_Grade").innerHTML = "F";
 	}
-	
+
 	console.info(eq +"%");
 
 	document.getElementById("p_3_Result").innerHTML = (eq +"%");
@@ -51,7 +51,7 @@ function weighted() {
 	var dividends = new Array(); //获取被除数
 	dividends = document.getElementsByClassName('dividend');
 
-	var weights = new Array(); //获取weight 
+	var weights = new Array(); //获取weight
 	weights = document.getElementsByClassName('weight');
 
 	var sum = 0;
@@ -61,9 +61,9 @@ function weighted() {
 		sum = sum + (divisors[i].value / dividends[i].value) * weights[i].value;
 		weights_sum = weights_sum + weights[i].value * 1.0;
 	}
-	
-	var eq = sum/weights_sum *100; 
-	
+
+	var eq = sum/weights_sum *100;
+
 	if(eq>=92){
 		document.getElementById("p_4_Grade").innerHTML = "A+";
 	}else if(eq>=87){
