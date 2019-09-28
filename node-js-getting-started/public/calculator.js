@@ -13,50 +13,35 @@ function means() {
 		len++;
 	}
 	
-	var eq = sum/len;
-	var isEq = eq*10;
+	var eq = sum/len *100; 
 	
-	if(isEq>=4.33){
+	if(eq>=92){
 		document.getElementById("p_4_Grade").innerHTML = "A+";
-	}else if(isEq>=4.00){
+	}else if(eq>=87){
 		document.getElementById("p_4_Grade").innerHTML = "A";
-	}else if(isEq>=3.67){
+	}else if(eq>=82){
 		document.getElementById("p_4_Grade").innerHTML = "A-";
-	}else if(isEq>=3.33){
+	}else if(eq>=78){
 		document.getElementById("p_4_Grade").innerHTML = "B+";
-	}else if(isEq>=3.00){
+	}else if(eq>=74){
 		document.getElementById("p_4_Grade").innerHTML = "B";
-	}else if(isEq>=2.67){
+	}else if(eq>=70){
 		document.getElementById("p_4_Grade").innerHTML = "B-";
-	}else if(isEq>=2.33){
+	}else if(eq>=65){
 		document.getElementById("p_4_Grade").innerHTML = "C+";
-	}else if(isEq>=2.00){
+	}else if(eq>=60){
 		document.getElementById("p_4_Grade").innerHTML = "C";
-	}else if(isEq>=1.67){
+	}else if(eq>=55){
 		document.getElementById("p_4_Grade").innerHTML = "C-";
-	}else if(isEq>=1.00){
+	}else if(eq>=50){
 		document.getElementById("p_4_Grade").innerHTML = "D";
 	}else{
 		document.getElementById("p_4_Grade").innerHTML = "F";
 	}
 	
-	
-	if(isEq>=3.67){
-		document.getElementById("p_4_Definition").innerHTML = "Excellent Performance";
-	}else if(isEq>=2.67){
-		document.getElementById("p_4_Definition").innerHTML = "Good Performance";
-	}else if(isEq>=2.00){
-		document.getElementById("p_4_Definition").innerHTML = "Satisfactory Performance";
-	}else if(isEq>=1.00){
-		document.getElementById("p_4_Definition").innerHTML = "Marginal Performance";
-	}else{
-		document.getElementById("p_4_Definition").innerHTML = "Fail. Unsatisfactory Performance";
-	}
-	
+	console.info(eq +"%");
 
-	console.info(sum / len);
-
-	document.getElementById("p_3_Result").innerHTML = (eq);
+	document.getElementById("p_3_Result").innerHTML = (eq +"%");
 }
 
 function weighted() {
@@ -76,10 +61,36 @@ function weighted() {
 		sum = sum + (divisors[i].value / dividends[i].value) * weights[i].value;
 		weights_sum = weights_sum + weights[i].value * 1.0;
 	}
+	
+	var eq = sum/weights_sum *100; 
+	
+	if(eq>=92){
+		document.getElementById("p_4_Grade").innerHTML = "A+";
+	}else if(eq>=87){
+		document.getElementById("p_4_Grade").innerHTML = "A";
+	}else if(eq>=82){
+		document.getElementById("p_4_Grade").innerHTML = "A-";
+	}else if(eq>=78){
+		document.getElementById("p_4_Grade").innerHTML = "B+";
+	}else if(eq>=74){
+		document.getElementById("p_4_Grade").innerHTML = "B";
+	}else if(eq>=70){
+		document.getElementById("p_4_Grade").innerHTML = "B-";
+	}else if(eq>=65){
+		document.getElementById("p_4_Grade").innerHTML = "C+";
+	}else if(eq>=60){
+		document.getElementById("p_4_Grade").innerHTML = "C";
+	}else if(eq>=55){
+		document.getElementById("p_4_Grade").innerHTML = "C-";
+	}else if(eq>=50){
+		document.getElementById("p_4_Grade").innerHTML = "D";
+	}else{
+		document.getElementById("p_4_Grade").innerHTML = "F";
+	}
 
-	console.info(sum / weights_sum);
+	console.info(eq + "%");
 
-	document.getElementById("p_3_Result").innerHTML = (sum / weights_sum);
+	document.getElementById("p_3_Result").innerHTML = (eq +"%");
 }
 
 function SetDividend(obj) {

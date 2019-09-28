@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
 <html>
-
 	<head>
-
 		<title>CourSys - Formula Tester</title>
 		<link rel="stylesheet" href="calculator.css" type="text/css" />
 	</head>
@@ -26,36 +24,35 @@
 				<tr>
 					<td>Activity 1</td>
 					<td>A1</td>
-					<td><input class="weight" type="text" style="width:50%;height:70%" /></td>
-					<td><input class="divisor" type="text" style="width:60%;height:70%;margin-bottom: 5px;" />/<input class="dividend" oninput="SetDividend(this)" type="text" style="width:60%;height:70%" /></td>
+					<td><input class="weight" type="text"/></td>
+					<td><input class="divisor" type="text"/>/<input class="dividend" oninput="SetDividend(this)" type="text"/></td>
 					<td></td>
 				</tr>
 				<tr>
 					<td>Activity 2</td>
 					<td>A2</td>
-					<td><input class="weight" type="text" style="width:50%;height:70%" /></td>
-					<td><input class="divisor" type="text" style="width:60%;height:70%;margin-bottom: 5px;" />/<input class="dividend" oninput="SetDividend(this)" type="text" style="width:60%;height:70%" /></td>
+					<td><input class="weight" type="text"/></td>
+					<td><input class="divisor" type="text"/>/<input class="dividend" oninput="SetDividend(this)" type="text"/></td>
 					<td></td>
 
 				</tr>
 				<tr>
 					<td>Activity 3</td>
 					<td>A3</td>
-					<td><input class="weight" type="text" style="width:50%;height:70%" /></td>
-					<td><input class="divisor" type="text" style="width:60%;height:70%;margin-bottom: 5px;" />/<input class="dividend" oninput="SetDividend(this)" type="text" style="width:60%;height:70%" /></td>
+					<td><input class="weight" type="text"/></td>
+					<td><input class="divisor" type="text"/>/<input class="dividend" oninput="SetDividend(this)" type="text"/></td>
 					<td></td>
 
 				</tr>
 				<tr>
 					<td>Activity 4</td>
 					<td>A4</td>
-					<td><input class="weight" type="text" style="width:50%;height:70%" /></td>
-					<td><input class="divisor" type="text" style="width:60%;height:70%;margin-bottom: 5px;" />/<input class="dividend" oninput="SetDividend(this)" type="text" style="width:60%;height:70%" /></td>
+					<td><input class="weight" type="text"/></td>
+					<td><input class="divisor" type="text"/>/<input class="dividend" oninput="SetDividend(this)" type="text"/></td>
 					<td></td>
 
 				</tr>
 			</table>
-
 			<p id="p_3">
 				Result:
 				<span id="p_3_Result"></span>
@@ -63,9 +60,7 @@
 			
 			<p id="p_4">
 				Letter Grade:
-				<span id="p_4_Grade" style="padding-right: 10px;"></span>
-				Definition:
-				<span id="p_4_Definition"></span>
+				<span id="p_4_Grade" ></span>
 			</p>
 			
 			<div id="buttons">
@@ -73,158 +68,6 @@
 				<button type="button" onclick="means()">MEAN</button>
 			</div>
 		</div>
-		<!-- <div class = "mainstuff">
-
-		<div class = "lowerbounds" >
-		<h3>Lower bounds </h3>
-		<div class = "scores" >
-
-		<table style = "width:100%">
-			<tr>
-				<th class="text1" >Max </th>
-				<th class = "input1"> <form> <input id ="max" type ="text" name="max" value = 100.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" >A+</th>
-				<th class = "input1"> <form> <input id = "aplus" type ="text" name="aplus" value = 95.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" >A</th>
-				<th class = "input1"> <form> <input id = "a" type ="text" name ="a" value = 90.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > A- </th>
-				<th class = "input1"> <form> <input id = "aminus" type ="text" name = "aminus" value = 85.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > B+ </th>
-				<th class = "input1"> <form> <input id = "bplus" type ="text" name = "bplus" value = 80.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > B </th>
-				<th class = "input1"> <form> <input id = "b" type ="text" name = "b" value = 75.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" >B- </th>
-				<th class = "input1"> <form> <input id = "bminus" type ="text" name = "bminus" value = 70.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > C+ </th>
-				<th class = "input1"> <form> <input id = "cplus" type ="text" name = "cplus" value = 65.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > C </th>
-				<th class = "input1"> <form> <input id = "c" type ="text" name = "c" value = 60.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > C- </th>
-				<th class = "input1"> <form> <input id = "cminus" type ="text" name = "cminus" value = 55.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > D </th>
-				<th class = "input1"> <form> <input id = "d" type ="text" name = "d" value = 50.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-			<tr>
-				<th class="text1" > F </th>
-				<th class = "input1"> <form> <input id = "f" type ="text" name = "f" value = 0.00 style="text-align:right" oninput="getHistogram()"> </form></th>
-			</tr>
-
-
-		</table>
-		</div>
-
-	</div>
-
-
-
-		<div class = "histogram" >
-		<h3>Histogram</h3>
-			<div class = "output">
-
-
-			<table style = "width:100%">
-
-			<tr>
-				<th>A+</th>
-				<th id = "ap"></th>
-			</tr>
-
-			<tr>
-				<th>A</th>
-				<th id = "an"></th>
-			</tr>
-
-			<tr>
-				<th> A- </th>
-				<th id = "am"></th>
-
-			</tr>
-
-			<tr>
-				<th> B+ </th>
-				<th id = "bp"></th>
-
-			</tr>
-
-			<tr>
-				<th> B </th>
-				<th id = "bn"></th>
-			</tr>
-
-			<tr>
-				<th>B- </th>
-				<th id = "bm"></th>
-
-			</tr>
-
-			<tr>
-				<th> C+ </th>
-				<th id = "cp"></th>
-
-			</tr>
-
-			<tr>
-				<th> C </th>
-				<th id = "cn"></th>
-
-			</tr>
-
-			<tr>
-				<th> C- </th>
-				<th id = "cm"></th>
-
-			</tr>
-
-			<tr>
-				<th> D </th>
-				<th id = "dn"></th>
-
-			</tr>
-
-			<tr>
-				<th> F </th>
-				<th id = "fn"></th>
-
-			</tr>
-
-
-		</table>
-
-
-			</div>
-	</div>
-	</div> -->
 	<script src="calculator.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
