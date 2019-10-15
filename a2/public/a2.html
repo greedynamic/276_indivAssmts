@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tokimon</title>
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+  </head>
+
+  <body>
+    <h1>Tokimon Data Collection</h1>
+    <form name='myform' method='POST' action='http://localhost:5000'>
+      <div class="content">
+        <div id="side">
+          <div id="origin" >
+            <label for="name">Tokimon Name: </label><input id="name" type="text" /><br /><br />
+            <label for="trainer">Trainer: </label><input id="trainer" type="text" /><br /><br />
+            <label for="weight">Weight: </label><input id="weight" type="text" /><br /><br />
+            <label for="height">Height: </label><input id="height" type="number" /><br /><br />
+            <label for="fly">Fly: </label><input id="fly" type="text" /><br /><br />
+            <label for="fight">Fight: </label><input id="fight" type="text" /><br /><br />
+            <label for="fire">Fire: </label><input id="fire" type="text" /><br /><br />
+            <label for="water">Water: </label><input id="water" type="text" /><br /><br />
+            <label for="electric">Electric: </label><input id="electric" type="text" /><br /><br />
+            <label for="ice">Ice: </label><input id="ice" type="text" /><br /><br />
+            <label for="total">Total: </label><input id="total" type="text" /><br /><br />
+            <!-- <div id="em">
+              <label for="email">Email(s): </label>
+              <input id="email" type="text" />
+              <button onclick="addEmails(this)" type="button"> + </button>
+            </div> -->
+          </div>
+          <div id="header" >
+            <label for="name">Tokimon Name: </label><input id="name" type="text" /><br /><br />
+            <label for="trainer">Trainer: </label><input id="trainer" type="text" /><br /><br />
+            <label for="weight">Weight: </label><input id="weight" type="text" /><br /><br />
+            <label for="height">Height: </label><input id="height" type="number" /><br /><br />
+            <label for="fly">Fly: </label><input id="fly" type="text" /><br /><br />
+            <label for="fight">Fight: </label><input id="fight" type="text" /><br /><br />
+            <label for="fire">Fire: </label><input id="fire" type="text" /><br /><br />
+            <label for="water">Water: </label><input id="water" type="text" /><br /><br />
+            <label for="electric">Electric: </label><input id="electric" type="text" /><br /><br />
+            <label for="ice">Ice: </label><input id="ice" type="text" /><br /><br />
+            <label for="total">Total: </label><input id="total" type="text" /><br /><br />
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="side">
+          <input type="button" onclick="addUsers();" value="Add More" />
+          <input type="submit" value="Submit" />
+        </div>
+    </form>
+  </body>
+  <script src="myServer.js"></script>
+</html>
