@@ -11,14 +11,9 @@ connectionString : process.env.DATABASE_URL
 
 })
 
-
-
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-
-
 
 
 app.set('views', path.join(__dirname, 'views'))
@@ -36,9 +31,6 @@ res.render('pages/db', results);
 
 });
 
-
-
-
 app.post('/dele', function(req, res, fields){
 
 var id = req.body.id;
@@ -50,14 +42,9 @@ res.redirect('/index');
 }else{
 
 res.send(error);
-
 }
-
 });
-
 });
-
-
 
 
 app.post('/add', function(req,res,fields){
@@ -83,11 +70,8 @@ pool.query(insert,function(error,results,fields){
 if(!error){
 res.redirect('/index');
 }else{
-
 res.send(error);
-
 }
-
 });
 });
 
