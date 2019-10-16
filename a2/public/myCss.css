@@ -1,0 +1,12 @@
+#header {
+  width:280px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#origin{
+  display: none;
+  width:280px;
+  padding: 10px;
+  border: 1px solid black;
+}
