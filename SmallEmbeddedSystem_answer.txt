@@ -1,0 +1,52 @@
+1. 
+(a)
+[1-(1-X)^2]x(99.99%)^3 >= 99.9%
+(b)
+When designers need higher realibility, it would be better to triplicate B and D. Because there are more units, the system would be more reliable. 
+
+(e)
+Codeword received: 1111110 divided by 1001
+Result is 1110000
+Remainder is 000
+Transmitted value is: 1111110000
+The 3 appended cyclic redundancy check is 000 so the codeword is correct.
+
+2.
+(a)
+01010001
+(b)
+9.5 bit time
+(c)
+
+
+
+3.
+(a)
+i. R3 = 0x70
+ii. R1 = 240, R2 = 128, R3 = 112
+iii.R1 = -112, R2 = 0, R3 = 112
+iv. C = 1, V = 0
+(b)
+(c)
+i.
+5.625-5=0.625
+5=101
+0.625x2=1.25 ---- 101.1
+0.25x2=0.5 ---- 101.10
+0.5x2=1 ---- 101.101
+0x2=0 ---- 101.1010
+The result is 101.1010
+number: 0101.1010
+inversion: 1010.0101
+addition of 1: 1010.0101 + 0.0001 = 1010.0110
+ii.
+Because 8-bit float might lose digits after the dot of the number and this will lead to very inexact value.
+(d)
+
+4.
+(a)
+Priority: 1.A -> 2.C -> 3.C
+Utilisation: 
+b. a binary semaphore can be used as mutex, which contains only two states 0 and 1.
+c. After certain cycles, If high priority task attempts to acquire shared resources after low priority task has acquired it, then high priority task becomes blocked until low priority task relinquishes the resource.
+
